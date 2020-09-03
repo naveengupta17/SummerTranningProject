@@ -1,0 +1,25 @@
+pbody{
+    background-image:url("../images/check.jpg");
+}
+h1{
+    text-align:center;
+    margin-top:300px;
+}
+a{
+    text-decoration:none;
+    display: inline-block;
+    padding: 10px;
+    color:white;
+    margin-top:10px;
+    background-color: rgb(22, 221, 55);
+    border-radius:10px;
+    font-size:20px;
+    margin-top:40px;
+    margin-left: 650px;
+}
+a:hover{
+    color:rgb(228, 228, 228);
+    background-color:rgb(19, 19, 223);
+    transition: .5s;
+
+}

@@ -1,0 +1,73 @@
+body{
+    background-image: url("../images/ack.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header{
+    text-align:center;
+  }
+  #s1{
+    text-align:center;
+  }
+  #p{
+    color:red;
+    font-size:20px;
+  }
+  #input1{
+    margin-left:45px;
+    margin-right:20px;
+  }
+  #input2{
+    margin-left:30px;
+  }
+  #input3{
+    margin-left:24px
+  }
+  #input4{
+    margin-left:60px;
+  }
+  #input5{
+    margin-left:60px;
+  }
+  #input6{
+    margin-left:14px;
+  }
+  select{
+    margin-left:55px;
+    border-color:blue;
+    border-radius:5px;
+    padding:5px;
+  }
+  #s2{
+    text-align:center;
+  }
+  form{
+    margin-left:50px;
+  }
+  input{
+      padding:5px 10px ;
+      border-radius: 5px;
+      text-align:center;
+  }
+  p{
+      display: inline-block;
+      margin-left:400px;
+  }
+   a{
+    text-decoration:none;
+    display: inline-block;
+    padding: 10px;
+    color:white;
+    margin-top:10px;
+    background-color: rgb(22, 221, 55);
+    border-radius:10px;
+    font-size:20px;
+    margin-top:10px;
+    margin-left: 600px;
+}
+a:hover{
+    color:rgb(228, 228, 228);
+    background-color:rgb(19, 19, 223);
+    transition: .5s;
+
+}

@@ -1,0 +1,65 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Product Purchase form</title>
+  <link rel="stylesheet" href="../CSS/buy.css">
+  <script>
+    function EmailChecker(){
+      var inputE= document.getElementById("input3").value;
+      var emailSyntax= /^.+@gmail.com$/;
+      if(emailSyntax.test(inputE)){
+      }
+      else{
+        alert("Please Enter valid Email");
+      }
+    }
+      function Phone(){
+        var inp= document.getElementById("input6").value;
+        if(inp.length!= 10){
+          alert("Pleae enter the valid number");
+        }  
+    }
+    
+    
+      
+      
+  </script>
+</head>
+<body>
+    <header>
+      <h1>Welcome!<br>Enjoy Your Adventure
+        <hr>
+    </header>
+    <main>
+      <section id="s1">
+      <img id ="img1" src="">
+      <p id="p">Plaese  Enter the following details:<p>  
+      </section>  
+      <form>
+        
+        <p>Full Name: </p><input id="input1" type="text" placeholder="  First Name" required>  <input id="input2" type="text" placeholder="  Last Name"><br><br>
+        <p>Email address:</p> <input id="input3" placeholder="  xyz@gmail.com"; onblur="EmailChecker()" required><br><br>
+        <p>Address:</p> <input id ="input4" required><br><br>
+        <p>Pincode:</p> <input id ="input5" type="number" required><br><br>
+       <p> Phone Number:</p> <input id="input6" type="number"; onblur="Phone()"; required><br><br>
+        <p>Number of Persons: </p>
+        <select>
+          <option> 1 </option>
+          <option> 2 </option>
+          <option> 3 </option>
+          <option> 4 </option>
+          <option> 5</option>
+        </select><br><br>
+        <p>Payment type:</p> <input name="payment" type="radio" checked> Netbanking<br>
+                      <input name="payment" type="radio" style="margin-left:500px"> UPI<br>
+        <input name="payment" type="radio" style="margin-left:500px"> Debit card<br>
+        <a href="check.html">Buy Package</a>
+        <p id="p1"></p>
+
+      </form>
+      
+    </main>
+
+</body>
+</html>

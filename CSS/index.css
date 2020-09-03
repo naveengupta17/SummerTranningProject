@@ -1,0 +1,160 @@
+*{
+    padding:0;
+    margin:0;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 250px;
+}
+/*Nav var*/
+
+#header{
+    width:100%;
+    height:80px;
+    background-image: linear-gradient(to left,rgb(58, 56, 56), rgb(117, 119, 118),rgb(11, 12, 12));
+    position: fixed;
+    padding:0 20px;
+    top:0;
+    z-index: 2;
+
+}
+#header2{
+    width:100%;
+    height:50px;
+    background-image: linear-gradient(to right,rgb(86, 255, 8),rgb(3, 119, 47));
+    position: sticky;
+    top:80px;
+    z-index: 2;
+    border-radius: 10px;
+}
+#header2 a{
+    text-decoration:none;
+    color:white;
+    font-size:30px;
+    margin:0 80px;
+    line-height: 50px;
+}
+#header2 a:hover{
+    color:black;
+    transition:.4s;
+}
+#header img{
+    border-radius: 50%;
+    height:78px;
+    width: 8%;
+    float: left;
+    line-height:80px;
+
+}
+#header h1{
+    float: left;
+    line-height: 80px;
+    color:rgb(119, 41, 207);
+    margin-left:10px;
+}
+#header h2{
+    float:right;
+}
+#header h2 a{
+    text-decoration:none;
+    display: inline-block;
+    color:white;
+    line-height:80px;
+    padding:0 25px;
+}
+#header h2 a:hover{
+    color:rgb(243, 97, 243);
+    transition:.5s;
+}
+
+/*Bannner*/
+#Banner{
+    position: relative;
+}
+#Banner img{
+    margin:50px 0;
+    width:100%;
+    height:700px;
+    border-radius: 10px;
+}
+#Banner #toi{
+    position: absolute;
+    top:120px;
+    left:60px;
+    color:rgb(238, 34, 34);
+    font-family: cursive;
+    font-size:80px;
+}
+#fi{
+    text-align: center;
+    margin: 20px 0;
+    display: inline-block;
+    background-image: linear-gradient(to right,rgb(16, 12, 221),rgb(147, 11, 238));
+    border-radius: 20px;
+    padding:20px;
+    margin-left:500px;
+}
+hr{
+    border-top:2px solid rgb(84, 109, 84);
+}
+.Activity h1{
+    text-align: center;
+    margin: 20px 0;
+    display: inline-block;
+    background-image: linear-gradient(to right,rgb(17, 247, 47),rgb(11, 238, 208));
+    border-radius: 20px;
+    padding:20px;
+    margin-left:650px;
+
+}
+.Activity img{
+    width:48%;
+    height: 400px;
+    float: left;
+    margin:10px 10px 50px 10px;
+    border-radius: 10px;
+
+
+}
+.info{
+    background-image: linear-gradient( to right, rgb(99, 97, 97),rgb(175, 167, 167),rgb(24, 23, 23));
+    width:48%;
+    height:400px;
+    float:right;
+    margin:10px 10px 50px 10px;
+    text-align:center;
+    font-size:20px;
+    color:white;
+    border-radius: 10px;
+}
+.info .info-head{
+    color:rgb(54, 0, 250);
+    font-size:30px;
+    margin-bottom: 5px;
+
+}
+.Activity a{
+    text-decoration:none;
+    display: inline-block;
+    padding: 10px;
+    color:white;
+    margin-top:10px;
+    background-color: rgb(22, 221, 55);
+    border-radius:10px;
+    font-size:20px;
+}
+.Activity a:hover{
+    color:rgb(228, 228, 228);
+    background-color:rgb(19, 19, 223);
+    transition: .5s;
+}
+#footer{
+    width:100%;
+    height:150px;
+    background-color: rgb(126, 126, 126);
+    color:white;
+    text-align:center;
+    margin-top:450px;
+    border-radius: 10px;
+}
+
