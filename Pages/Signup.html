@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/Login.css"/>
+        <link rel="stylesheet" href="../CSS/index.css">
+        <title>SignUp </title>
+        <script>
+            function EmailChecker(){
+              var inputE= document.getElementById("input3").value;
+              var emailSyntax= /^.+@gmail.com$/;
+              if(emailSyntax.test(inputE)){
+              }
+              else{
+                alert("Please Enter valid Email");
+              }
+            }
+              function Phone(){
+                var inp= document.getElementById("input6").value;
+                if(inp.length!= 10){
+                  alert("Please enter the valid number");
+                }  
+            }
+            function Name(){
+                var inp = document.getElementById("input1").value;
+                if(inp.length==null){
+                    alert("Please enter the name");
+                }
+            }
+              
+          </script>
+
+    </head>
+   
+    <body>
+        <div id = "header">
+           
+            <img src="../images/Logo1.jpg">
+            <h1 id = "logo">AdventruesHere <sub style="color:rgb(23, 231, 117);"> Your Saftey is our First Priority</sub> </h1> 
+            <h2 id = "nav2"><a href = "../Pages/Feedback.html">Feedback</a></h2>
+            <h2 id = "nav2"><a href = "../Pages/Login.html">Login</a></h2>
+            <h2 id = "nav3"><a href = "../index.html">Home</a></h2>
+            
+
+        </div>
+        
+        <div class="middle">
+            <form>
+                <h1><center>Sign Up</center></h1><br>
+                <hr><br>
+                <h2><center>CREATE AN ACCOUNT</center></h2><br>
+                <label for="fname" id="input1" onblur="Name()";>First Name:</label>
+                <input type="text" placeholder="Enter First Name" name="fname" required>
+                <label for="lname" id="input1" onblur="name()">Last Name:</label>
+                <input type="text" placeholder="Enter Last Name" name="lname" required>
+                <label for="uname">Username:</label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="email">Email:</label>
+                <input type="text" placeholder="Enter Email" name="email" id="input3" onblur="EmailChecker()" required>
+                <label for="psw">Password:</label>
+                <input type="text" placeholder="Enter Password" name="psw" required>
+                <label for="rpsw">Repeat Password:</label>
+                <input type="text" placeholder="Enter Password Again" name="rpsw" required>
+                <button type="submit" class="signup">Create An Account</button><br><br>
+                <h4>Already have an account? <a href="../Pages/Login.html">Sign-in</a></h4>
+            </form>
+        </div>
+    </body>
+</html>

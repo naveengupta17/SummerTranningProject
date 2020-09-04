@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/index.css"/>
+    <link rel="stylesheet" href="../CSS/Feedback.css"/>
+    <title>Contact-Us</title>
+    <script>
+        function EmailChecker(){
+          var inputE= document.getElementById("email").value;
+          var emailSyntax= /^.+@gmail.com$/;
+          if(emailSyntax.test(inputE)){
+          }
+          else{
+            alert("Please Enter valid Email");
+          }
+        }
+          function Phone(){
+            var inp= document.getElementById("mobno").value;
+            if(inp.length!= 10){
+              alert("Pleae enter the valid number");
+            }  
+        }
+          
+      </script>
+</head>
+<body>
+    <div id = "header">
+           
+        <img src="../images/Logo1.jpg">
+        <h1 id = "logo">AdventruesHere <sub style="color:rgb(23, 231, 117);"> Your Saftey is our First Priority</sub> </h1> 
+        <h2 id = "nav2"><a href = "../Pages/Login.html">Login</a></h2>
+        <h2 id = "nav2"><a href = "../Pages/Signup.html">Signup</a></h2>
+        <h2 id = "nav3"><a href = "../index.html">Home</a></h2>
+        
+
+    </div>
+    <div class="header">
+        <h1>Feedback</h1>
+
+    </div>
+
+
+    <div class="main">
+        <div id="left">
+            <div id="l1">
+                <p>Please Use the form below to sumbmit your Feedback</p>
+                <br>
+                <form class="form">
+
+                    <label for="username">Username :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="username" name="username" placeholder="Abhay singh" required><br><br><br>
+                    <label for="email">e-mail :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="email" id="email" name="email" placeholder="abc@gmail.com" onblur="EmailChecker()" required><br><br><br>
+                    <label for="mobno">Mobile No:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="tel" id="mobno" name="mobno" onblur="Phone()" placeholder="1234-567-890" required><br><br><br>
+                    <label for="msg">Message:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="msg" name="msg" placeholder="@@@@@@@@@@" required><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="submit" value="Send Message" id="submit">
+                </form>
+                </div>
+        </div>
+
+        <div id="right">
+            <div id="r1">
+            <h2>Communication Details :</h2><br>
+            <p>Feel free to get in touch with our team!</p><br>
+            <h3>Write to us :</h3><br>
+            <p>abhayroy@gmail.com</p><br>
+            <h3>Talk to Experts :</h3><br>
+            <p>+919999999999</p><br>
+            <h3>Reaches to Us</h3><br>
+            <p>144 HoliGate</p><br>
+            <p>mathura-245875</p>
+            <br><br>
+
+            <h2>Thanks to Visit the Site</h2>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

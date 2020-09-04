@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+label{
+    font-weight: bolder;
+    font-size: 20px;
+}
+input{
+    padding: 15px;
+    margin: 5px 10px 20px 0;
+    display: inline-block;
+    border: none;
+    background: whitesmoke;
+    width: 100%;
+}
+.middle{
+    justify-content:center;
+    display: flex;
+    padding: 10px;
+    margin-top: 85px;
+}
+input:focus{
+    background-color:white;
+}
+form{
+    padding: 25px;
+    border: solid gray;
+    width: 450px;
+}
+h1{
+    color: darkcyan;
+}
+button{
+    background-color:skyblue;
+    color: white;
+    padding: 10px;
+    border:none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover{
+    color: skyblue;
+    background-color:blanchedalmond;
+}
