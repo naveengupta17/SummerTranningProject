@@ -22,6 +22,14 @@
                   alert("Pleae enter the valid number");
                 }  
             }
+            function Name(){
+            var nameV = document.getElementById("name").value;
+            if( nameV.length == 0){
+                alert("Please fill the field");
+                
+            } 
+            
+        }
               
           </script>
     </head>
@@ -41,7 +49,7 @@
                 <h1><center>LOGIN</center></h1><br>
                 <hr><br>
                 <label for="uname">Username:</label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
+                <input type="text" placeholder="Enter Username" name="uname" id="name" onblur="Name()" required>
                 <label for="psw">Password:</label>
                 <input type="text" placeholder="Enter Password" name="psw" required>
                 <button type="submit" class="login">LOGIN</button><br><br>
