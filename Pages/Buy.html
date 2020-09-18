@@ -20,6 +20,48 @@
           alert("Pleae enter the valid number");
         }  
     }
+    function Name(){
+            var nameV = document.getElementById("input1").value;
+            if( nameV.length == 0){
+                alert("Please fill the field");
+                
+            }
+            
+        }
+      function NameL(){
+          var nameV = document.getElementById("input2").value;
+          if( nameV.length == 0){
+              alert("Please fill the field");
+              
+          }
+          
+      }
+      function NameE(){
+          var nameV = document.getElementById("input4").value;
+          if( nameV.length == 0){
+              alert("Please fill the field");
+              
+          }
+          
+      }
+      function NameE(){
+          var nameV = document.getElementById("input4").value;
+          if( nameV.length == 0){
+              alert("Please fill the field");
+              
+          }
+          
+      }
+      function NameP(){
+          var nameV = document.getElementById("input5").value;
+          if( nameV.length == 0){
+              alert("Please fill the field");
+              
+          }
+          
+      }
+    
+    
     
     
       
@@ -38,10 +80,10 @@
       </section>  
       <form>
         
-        <p>Full Name: </p><input id="input1" type="text" placeholder="  First Name" required>  <input id="input2" type="text" placeholder="  Last Name"><br><br>
+        <p>Full Name: </p><input id="input1" type="text" placeholder="  First Name" class ="name" onblur="Name();" required>  <input id="input2" type="text" class="name" placeholder="  Last Name" onblur="NameL()"><br><br>
         <p>Email address:</p> <input id="input3" placeholder="  xyz@gmail.com"; onblur="EmailChecker()" required><br><br>
-        <p>Address:</p> <input id ="input4" required><br><br>
-        <p>Pincode:</p> <input id ="input5" type="number" required><br><br>
+        <p>Address:</p> <input id ="input4" class = "name" onblur="NameE()" required><br><br>
+        <p>Pincode:</p> <input id ="input5" type="number" onblur="NameP()" required><br><br>
        <p> Phone Number:</p> <input id="input6" type="number"; onblur="Phone()"; required><br><br>
         <p>Number of Persons: </p>
         <select>

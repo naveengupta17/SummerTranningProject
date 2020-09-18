@@ -23,11 +23,13 @@
                 }  
             }
             function Name(){
-                var inp = document.getElementById("input1").value;
-                if(inp.length==null){
-                    alert("Please enter the name");
-                }
+            var nameV = document.getElementById("name").value;
+            if( nameV.length == 0){
+                alert("Please fill the field");
+                
             }
+            
+        }
               
           </script>
 
@@ -50,12 +52,12 @@
                 <h1><center>Sign Up</center></h1><br>
                 <hr><br>
                 <h2><center>CREATE AN ACCOUNT</center></h2><br>
-                <label for="fname" id="input1" onblur="Name()";>First Name:</label>
-                <input type="text" placeholder="Enter First Name" name="fname" required>
-                <label for="lname" id="input1" onblur="name()">Last Name:</label>
-                <input type="text" placeholder="Enter Last Name" name="lname" required>
+                <label for="fname" id="input1" >First Name:</label>
+                <input type="text" id ="name" placeholder="Enter First Name" name="fname" onblur="Name()"; required>
+                <label for="lname" id="input1" >Last Name:</label>
+                <input type="text" id ="name" placeholder="Enter Last Name" name="lname" onblur="Name()"; required>
                 <label for="uname">Username:</label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
+                <input type="text" placeholder="Enter Username" name="uname" id="name"  onblur="Name()";  required>
                 <label for="email">Email:</label>
                 <input type="text" placeholder="Enter Email" name="email" id="input3" onblur="EmailChecker()" required>
                 <label for="psw">Password:</label>
